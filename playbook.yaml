@@ -13,9 +13,7 @@
     count: 2
     hostname1: build_node
     hostname2: prod_node
-    ec2_access_key: AKIAWMREQVX2P4477PAB
-    ec2_secret_key: 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
-
+ 
   tasks: 
 
     - name: Create new security group
@@ -42,6 +40,6 @@
                      region={{ region }}     
                      keypair={{ keypair }}
                      count={{ count }}
-         register: ec2                           
+       register: ec2                           
 
     
