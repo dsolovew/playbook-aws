@@ -33,14 +33,14 @@
 
     
     - name: Launch new EC2 instance
-      local_action: ec2	
-                     group: "{{ security_group }}"                 
-                     instance_type: "{{ instance_type }}"        
-                     image: "{{ image }}"       
-                     wait: true 
-                     region: "{{ region }}"     
-                     keypair: "{{ keypair }}"
-                     count: "{{ count }}"
+      ec2:	
+        group: "{{ security_group }}"              
+        instance_type: "{{ instance_type }}"       
+        image: "{{ image }}"
+        wait: true
+        region: "{{ region }}"     
+        keypair: "{{ keypair }}"
+        count: "{{ count }}"
       register: ec2                           
 
     
