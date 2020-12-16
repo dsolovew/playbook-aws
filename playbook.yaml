@@ -10,7 +10,7 @@
     image: ami-0d2751e39abf67ea8
     region: us-east-2
     keypair: MKey1
-    count: 2
+    count: 1
     hostname1: build_node
     hostname2: prod_node
  
