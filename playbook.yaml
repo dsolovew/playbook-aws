@@ -5,7 +5,7 @@
   tags: provisioning
 
   vars:
-    ansible_python_interpreter: /usr/bin/python3
+    ansible_python_interpreter: /usr/bin/python3.6
     instance_type: t2.micro
     security_group: prod_build_nodes
     image: ami-0d2751e39abf67ea8
