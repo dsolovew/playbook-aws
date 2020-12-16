@@ -8,7 +8,7 @@
     instance_type: t2.micro
     security_group: prod_build_nodes
     image: ami-0d2751e39abf67ea8
-    region: us-east-2b
+    region: us-east-2
     keypair: MKey1
     count: 2
     hostname1: build_node
