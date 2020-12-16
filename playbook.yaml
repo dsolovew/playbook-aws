@@ -31,8 +31,9 @@
           - proto: all
             cidr_ip: 0.0.0.0/0
 
-     - name: Launch new EC2 instance
-       local_action: ec2	
+    
+    - name: Launch new EC2 instance
+      local_action: ec2	
                      group={{ security_group }}                 
                      instance_type={{ instance_type }}        
                      image={{ image }}       
@@ -40,6 +41,6 @@
                      region={{ region }}     
                      keypair={{ keypair }}
                      count={{ count }}
-       register: ec2                           
+      register: ec2                           
 
     
